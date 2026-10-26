@@ -9,10 +9,9 @@ class Die:
         return random.randint(1, 6)
 
 class Player:
-    """
-    Base class (Parent). 
-    Sets up the standard attributes every player needs.
-    """
+    
+    ## parent class and it sets up the standard attributes every player needs.
+  
     def __init__(self, name):
         self.name = name
         self.score = 0
@@ -112,7 +111,7 @@ class Game:
             ## swap between player 0 and player 1
             current = 1 - current 
 
-class TimedGameProxy
+class TimedGameProxy:
     ## the proxy pattern acts as a wrapper around the original Game class.
     ## it allows us to add the 60-second timer feature without having to modify or break the original Game class code above.
     
