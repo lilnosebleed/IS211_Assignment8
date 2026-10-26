@@ -53,8 +53,7 @@ class ComputerPlayer(Player):
     def take_turn(self):
         turn_total = 0
         die = Die()
-        
-        ## the specific AI strategy requested by the assignment rules.
+    
         ## it calculates how far the computer is from 100, and stops at either 25 or that difference.
         limit = min(25, 100 - self.score)
         print(f"\n{self.name}'s Turn (Computer). Target is {limit}.")
