@@ -111,7 +111,7 @@ class Game:
 
 class TimedGameProxy:
     ## the proxy pattern acts as a wrapper around the original Game class.
-    ## it allows us to add the 60-second timer feature without having to modify or break the original Game class code above.
+    ## it allows us to add the 60 second timer feature without having to modify or break the original game class 
     
     def __init__(self, player1, player2):
         ## the proxy creates and holds the real game object inside itself
