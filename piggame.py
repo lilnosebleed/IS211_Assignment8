@@ -9,7 +9,6 @@ class Die:
         return random.randint(1, 6)
 
 class Player:
-    
     ## parent class and it sets up the standard attributes every player needs.
   
     def __init__(self, name):
@@ -36,7 +35,7 @@ class HumanPlayer(Player):
                 roll_val = die.roll()
                 print(f"Rolled a {roll_val}")
                 if roll_val == 1:
-                    print("Pig! You lose your points for this turn.")
+                    print("Pig -- you have lost your points")
                     turn_total = 0
                     break
                 else:
